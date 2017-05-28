@@ -4,7 +4,7 @@ A solution for a [case](https://github.com/sinemgetir/state-elimination-mt) in t
 
 ## How to use this repository? ##
 
-### Install and use our tool ###
+### Run our solution ###
 
 Set-up
 
