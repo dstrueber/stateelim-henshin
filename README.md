@@ -22,6 +22,6 @@ Usage
 * The test results are written to the folder *testresult* of the same project.
 * The timeout duration can be set in the class *TestFramework.java* in the package *test*.
 
-### View and edit the transformation ###
+### View and edit the transformations ###
 
-* To view and edit the transformation, please open the *.henshin* and *.henshin_diagram* files contained in the *transformations* folder of the *ttc16-solution* project.
+* To view and edit the transformations, please open the *.henshin* and *.henshin_diagram* files contained in the folder *transformations*  of the project *uko.rgse.ttc.stateelim.henshinsolution*.
