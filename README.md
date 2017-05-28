@@ -24,5 +24,5 @@ Usage
 
 ### View and edit the transformations ###
 
-* To view and edit the transformations, you first need to make sure that the TransitionGraph metamodel is registered in your Eclipse metamodel registry. To this end, copy the file *TransitionGraph_1.0.0.201705162001.jar*  from *uko.rgse.ttc.stateelim.henshinsolution/lib* to the **dropins** folder of your Eclipse installation and restart Eclipse. This file contains an Eclipse plug-in with generated code for the TransitionGraph metamodel.
+* To view and edit the transformations, you first need to make sure that the TransitionGraph metamodel is registered in your Eclipse metamodel registry. To this end, copy the file *TransitionGraph_1.0.0.201705162001.jar*  from *uko.rgse.ttc.stateelim.henshinsolution/lib* to the *dropins* folder of your Eclipse installation and restart Eclipse. This file contains an Eclipse plug-in with generated code for the TransitionGraph metamodel.
 * Open the *.henshin* and *.henshin_diagram* files contained in the folder *transformations*  of the project *uko.rgse.ttc.stateelim.henshinsolution*.
