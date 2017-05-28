@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_LxdGcDpiEeesbZUyi7IZxQ" name="">
+  <imports href="http://transitiongraph/1.0#/"/>
+  <imports href="http://www.eclipse.org/emf/2011/Henshin/Trace#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_OH29IDpiEeesbZUyi7IZxQ" name="hasRemaining">
+    <parameters xmi:id="_dV1QQDpvEeed9pCwOM-lzA" name="next" kind="OUT"/>
+    <lhs xmi:id="_OIi5oDpiEeesbZUyi7IZxQ" name="Lhs">
+      <nodes xmi:id="_l3cX4DpiEeesbZUyi7IZxQ" name="next">
+        <type href="http://transitiongraph/1.0#//State"/>
+        <attributes xmi:id="_pQ2jsDpiEeesbZUyi7IZxQ" value="false">
+          <type href="http://transitiongraph/1.0#//State/isFinal"/>
+        </attributes>
+        <attributes xmi:id="_zp9YoDp6Eeed9pCwOM-lzA" value="false">
+          <type href="http://transitiongraph/1.0#//State/isInitial"/>
+        </attributes>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_OIi5oTpiEeesbZUyi7IZxQ" name="Rhs">
+      <nodes xmi:id="_l3c-8DpiEeesbZUyi7IZxQ" name="next">
+        <type href="http://transitiongraph/1.0#//State"/>
+        <attributes xmi:id="_pQ3KwDpiEeesbZUyi7IZxQ" value="false">
+          <type href="http://transitiongraph/1.0#//State/isFinal"/>
+        </attributes>
+        <attributes xmi:id="_zp-mwDp6Eeed9pCwOM-lzA" value="false">
+          <type href="http://transitiongraph/1.0#//State/isInitial"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_l3c-8TpiEeesbZUyi7IZxQ" origin="_l3cX4DpiEeesbZUyi7IZxQ" image="_l3c-8DpiEeesbZUyi7IZxQ"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_ZI8PgDpjEeeOyInNHnF0QQ" name="fixTransitionsUnlooped" injectiveMatching="false">
+    <parameters xmi:id="_K0HMEDpwEeed9pCwOM-lzA" name="cur" kind="IN"/>
+    <parameters xmi:id="_0Km0IDplEeeOyInNHnF0QQ" name="a" kind="VAR"/>
+    <parameters xmi:id="_0KoCQDplEeeOyInNHnF0QQ" name="b" kind="VAR"/>
+    <parameters xmi:id="_JSa6QDv5Eee_BvaFcArrhA" name="pa" kind="VAR"/>
+    <parameters xmi:id="_JvkwUDv5Eee_BvaFcArrhA" name="pb" kind="VAR"/>
+    <lhs xmi:id="_ZI8PgjpjEeeOyInNHnF0QQ" name="Lhs">
+      <nodes xmi:id="_bB0csDpjEeeOyInNHnF0QQ" name="cur" incoming="_mZK10DprEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State"/>
+      </nodes>
+      <nodes xmi:id="_lkjiADprEeed9pCwOM-lzA" outgoing="_mZK10DprEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+      </nodes>
+      <edges xmi:id="_mZK10DprEeed9pCwOM-lzA" source="_lkjiADprEeed9pCwOM-lzA" target="_bB0csDpjEeeOyInNHnF0QQ">
+        <type href="http://transitiongraph/1.0#//TransitionGraph/states"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_ZI8PijpjEeeOyInNHnF0QQ" name="Rhs">
+      <nodes xmi:id="_bB0csTpjEeeOyInNHnF0QQ" name="cur" incoming="_mZK10TprEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State"/>
+      </nodes>
+      <nodes xmi:id="_lkjiATprEeed9pCwOM-lzA" outgoing="_mZK10TprEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+      </nodes>
+      <edges xmi:id="_mZK10TprEeed9pCwOM-lzA" source="_lkjiATprEeed9pCwOM-lzA" target="_bB0csTpjEeeOyInNHnF0QQ">
+        <type href="http://transitiongraph/1.0#//TransitionGraph/states"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_bB0csjpjEeeOyInNHnF0QQ" origin="_bB0csDpjEeeOyInNHnF0QQ" image="_bB0csTpjEeeOyInNHnF0QQ"/>
+    <mappings xmi:id="_lkjiAjprEeed9pCwOM-lzA" origin="_lkjiADprEeed9pCwOM-lzA" image="_lkjiATprEeed9pCwOM-lzA"/>
+    <multiRules xmi:id="_mWTBoDpjEeeOyInNHnF0QQ" injectiveMatching="false">
+      <parameters xmi:id="_mWX6IDpjEeeOyInNHnF0QQ" name="cur" kind="IN"/>
+      <parameters xmi:id="_0KoCQTplEeeOyInNHnF0QQ" name="a" kind="VAR"/>
+      <parameters xmi:id="_0KoCQjplEeeOyInNHnF0QQ" name="b" kind="VAR"/>
+      <parameters xmi:id="_JSdWgDv5Eee_BvaFcArrhA" name="pa" kind="VAR"/>
+      <parameters xmi:id="_JvkwUTv5Eee_BvaFcArrhA" name="pb" kind="VAR"/>
+      <lhs xmi:id="_mWTosDpjEeeOyInNHnF0QQ" name="Lhs">
+        <nodes xmi:id="_mWUPwTpjEeeOyInNHnF0QQ" incoming="_mZK10zprEeed9pCwOM-lzA _9MqpEDrqEeed9pCwOM-lzA" outgoing="_kVdLQDpjEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+        <nodes xmi:id="_hHNtoDpjEeeOyInNHnF0QQ" incoming="_j3Z9UDpjEeeOyInNHnF0QQ _uPVg0DprEeed9pCwOM-lzA" outgoing="_9MqpEDrqEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition"/>
+          <attributes xmi:id="_xsyt4DplEeeOyInNHnF0QQ" value="a">
+            <type href="http://transitiongraph/1.0#//Transition/label"/>
+          </attributes>
+          <attributes xmi:id="_E5OscDv5Eee_BvaFcArrhA" value="pa">
+            <type href="http://transitiongraph/1.0#//Transition/probability"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_jJOBoDpjEeeOyInNHnF0QQ" incoming="_kVdLQDpjEeeOyInNHnF0QQ _ud_A0DprEeed9pCwOM-lzA" outgoing="_kkGrQDpjEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//Transition"/>
+          <attributes xmi:id="_yjV7YDplEeeOyInNHnF0QQ" value="b">
+            <type href="http://transitiongraph/1.0#//Transition/label"/>
+          </attributes>
+          <attributes xmi:id="_H3LEQDv5Eee_BvaFcArrhA" value="pb">
+            <type href="http://transitiongraph/1.0#//Transition/probability"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_iwHlIDpjEeeOyInNHnF0QQ" outgoing="_j3Z9UDpjEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+        <nodes xmi:id="_i6bXsDpjEeeOyInNHnF0QQ" incoming="_kkGrQDpjEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+        <nodes xmi:id="_lkjiBTprEeed9pCwOM-lzA" outgoing="_mZK10zprEeed9pCwOM-lzA _uPVg0DprEeed9pCwOM-lzA _ud_A0DprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+        </nodes>
+        <edges xmi:id="_kkGrQDpjEeeOyInNHnF0QQ" source="_jJOBoDpjEeeOyInNHnF0QQ" target="_i6bXsDpjEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//Transition/target"/>
+        </edges>
+        <edges xmi:id="_kVdLQDpjEeeOyInNHnF0QQ" source="_mWUPwTpjEeeOyInNHnF0QQ" target="_jJOBoDpjEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//State/outgoing"/>
+        </edges>
+        <edges xmi:id="_j3Z9UDpjEeeOyInNHnF0QQ" source="_iwHlIDpjEeeOyInNHnF0QQ" target="_hHNtoDpjEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//State/outgoing"/>
+        </edges>
+        <edges xmi:id="_mZK10zprEeed9pCwOM-lzA" source="_lkjiBTprEeed9pCwOM-lzA" target="_mWUPwTpjEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/states"/>
+        </edges>
+        <edges xmi:id="_uPVg0DprEeed9pCwOM-lzA" source="_lkjiBTprEeed9pCwOM-lzA" target="_hHNtoDpjEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/transitions"/>
+        </edges>
+        <edges xmi:id="_ud_A0DprEeed9pCwOM-lzA" source="_lkjiBTprEeed9pCwOM-lzA" target="_jJOBoDpjEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/transitions"/>
+        </edges>
+        <edges xmi:id="_9MqpEDrqEeed9pCwOM-lzA" source="_hHNtoDpjEeeOyInNHnF0QQ" target="_mWUPwTpjEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//Transition/target"/>
+        </edges>
+      </lhs>
+      <rhs xmi:id="_mWTosTpjEeeOyInNHnF0QQ" name="Rhs">
+        <nodes xmi:id="_mWTosjpjEeeOyInNHnF0QQ" incoming="_mZK10jprEeed9pCwOM-lzA _9MqpETrqEeed9pCwOM-lzA" outgoing="_-pslATpsEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+        <nodes xmi:id="_iwHlITpjEeeOyInNHnF0QQ" outgoing="_v6_ZEDplEeeOyInNHnF0QQ _93TewTpsEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+        <nodes xmi:id="_i6bXsTpjEeeOyInNHnF0QQ" incoming="_wNZ-wDplEeeOyInNHnF0QQ _-pslAzpsEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+        <nodes xmi:id="_tmx6wDplEeeOyInNHnF0QQ" incoming="_v6_ZEDplEeeOyInNHnF0QQ _l9BFUDprEeed9pCwOM-lzA" outgoing="_wNZ-wDplEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//Transition"/>
+          <attributes xmi:id="_3Hks0DprEeed9pCwOM-lzA" value="a+b">
+            <type href="http://transitiongraph/1.0#//Transition/label"/>
+          </attributes>
+          <attributes xmi:id="_TcW-sDv5Eee_BvaFcArrhA" value="pa*pb">
+            <type href="http://transitiongraph/1.0#//Transition/probability"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_lkjiAzprEeed9pCwOM-lzA" outgoing="_l9BFUDprEeed9pCwOM-lzA _mZK10jprEeed9pCwOM-lzA _93TewjpsEeed9pCwOM-lzA _-pslAjpsEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+        </nodes>
+        <nodes xmi:id="_93S3sDpsEeed9pCwOM-lzA" incoming="_93TewTpsEeed9pCwOM-lzA _93TewjpsEeed9pCwOM-lzA" outgoing="_9MqpETrqEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition"/>
+          <attributes xmi:id="_93S3sTpsEeed9pCwOM-lzA" value="a">
+            <type href="http://transitiongraph/1.0#//Transition/label"/>
+          </attributes>
+          <attributes xmi:id="_E5QhoDv5Eee_BvaFcArrhA" value="pa">
+            <type href="http://transitiongraph/1.0#//Transition/probability"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_-pr98DpsEeed9pCwOM-lzA" incoming="_-pslATpsEeed9pCwOM-lzA _-pslAjpsEeed9pCwOM-lzA" outgoing="_-pslAzpsEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition"/>
+          <attributes xmi:id="_-pr98TpsEeed9pCwOM-lzA" value="b">
+            <type href="http://transitiongraph/1.0#//Transition/label"/>
+          </attributes>
+          <attributes xmi:id="_H3LEQTv5Eee_BvaFcArrhA" value="pb">
+            <type href="http://transitiongraph/1.0#//Transition/probability"/>
+          </attributes>
+        </nodes>
+        <edges xmi:id="_v6_ZEDplEeeOyInNHnF0QQ" source="_iwHlITpjEeeOyInNHnF0QQ" target="_tmx6wDplEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//State/outgoing"/>
+        </edges>
+        <edges xmi:id="_wNZ-wDplEeeOyInNHnF0QQ" source="_tmx6wDplEeeOyInNHnF0QQ" target="_i6bXsTpjEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//Transition/target"/>
+        </edges>
+        <edges xmi:id="_l9BFUDprEeed9pCwOM-lzA" source="_lkjiAzprEeed9pCwOM-lzA" target="_tmx6wDplEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/transitions"/>
+        </edges>
+        <edges xmi:id="_mZK10jprEeed9pCwOM-lzA" source="_lkjiAzprEeed9pCwOM-lzA" target="_mWTosjpjEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/states"/>
+        </edges>
+        <edges xmi:id="_93TewTpsEeed9pCwOM-lzA" source="_iwHlITpjEeeOyInNHnF0QQ" target="_93S3sDpsEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State/outgoing"/>
+        </edges>
+        <edges xmi:id="_93TewjpsEeed9pCwOM-lzA" source="_lkjiAzprEeed9pCwOM-lzA" target="_93S3sDpsEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/transitions"/>
+        </edges>
+        <edges xmi:id="_-pslATpsEeed9pCwOM-lzA" source="_mWTosjpjEeeOyInNHnF0QQ" target="_-pr98DpsEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State/outgoing"/>
+        </edges>
+        <edges xmi:id="_-pslAjpsEeed9pCwOM-lzA" source="_lkjiAzprEeed9pCwOM-lzA" target="_-pr98DpsEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/transitions"/>
+        </edges>
+        <edges xmi:id="_-pslAzpsEeed9pCwOM-lzA" source="_-pr98DpsEeed9pCwOM-lzA" target="_i6bXsTpjEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//Transition/target"/>
+        </edges>
+        <edges xmi:id="_9MqpETrqEeed9pCwOM-lzA" source="_93S3sDpsEeed9pCwOM-lzA" target="_mWTosjpjEeeOyInNHnF0QQ">
+          <type href="http://transitiongraph/1.0#//Transition/target"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_mWUPyTpjEeeOyInNHnF0QQ" origin="_mWUPwTpjEeeOyInNHnF0QQ" image="_mWTosjpjEeeOyInNHnF0QQ"/>
+      <mappings xmi:id="_i6bXsjpjEeeOyInNHnF0QQ" origin="_i6bXsDpjEeeOyInNHnF0QQ" image="_i6bXsTpjEeeOyInNHnF0QQ"/>
+      <mappings xmi:id="_iwHlIjpjEeeOyInNHnF0QQ" origin="_iwHlIDpjEeeOyInNHnF0QQ" image="_iwHlITpjEeeOyInNHnF0QQ"/>
+      <mappings xmi:id="_lkjiBzprEeed9pCwOM-lzA" origin="_lkjiBTprEeed9pCwOM-lzA" image="_lkjiAzprEeed9pCwOM-lzA"/>
+      <mappings xmi:id="_93TewDpsEeed9pCwOM-lzA" origin="_hHNtoDpjEeeOyInNHnF0QQ" image="_93S3sDpsEeed9pCwOM-lzA"/>
+      <mappings xmi:id="_-pslADpsEeed9pCwOM-lzA" origin="_jJOBoDpjEeeOyInNHnF0QQ" image="_-pr98DpsEeed9pCwOM-lzA"/>
+      <multiMappings xmi:id="_mWToszpjEeeOyInNHnF0QQ" origin="_bB0csTpjEeeOyInNHnF0QQ" image="_mWTosjpjEeeOyInNHnF0QQ"/>
+      <multiMappings xmi:id="_mWUPwjpjEeeOyInNHnF0QQ" origin="_bB0csDpjEeeOyInNHnF0QQ" image="_mWUPwTpjEeeOyInNHnF0QQ"/>
+      <multiMappings xmi:id="_lkjiBDprEeed9pCwOM-lzA" origin="_lkjiATprEeed9pCwOM-lzA" image="_lkjiAzprEeed9pCwOM-lzA"/>
+      <multiMappings xmi:id="_lkjiBjprEeed9pCwOM-lzA" origin="_lkjiADprEeed9pCwOM-lzA" image="_lkjiBTprEeed9pCwOM-lzA"/>
+    </multiRules>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_-5uagDprEeed9pCwOM-lzA" name="fixTransitionsLooped" injectiveMatching="false">
+    <parameters xmi:id="__yDz4DpvEeed9pCwOM-lzA" name="cur" kind="IN"/>
+    <parameters xmi:id="_-5uagjprEeed9pCwOM-lzA" name="a" kind="VAR"/>
+    <parameters xmi:id="_-5uagzprEeed9pCwOM-lzA" name="b" kind="VAR"/>
+    <parameters xmi:id="_Sxvt0DpsEeed9pCwOM-lzA" name="l" kind="VAR"/>
+    <parameters xmi:id="_00ZhcDv5Eee_BvaFcArrhA" name="pa" kind="VAR"/>
+    <parameters xmi:id="_00b9sDv5Eee_BvaFcArrhA" name="pb" kind="VAR"/>
+    <parameters xmi:id="_00b9sTv5Eee_BvaFcArrhA" name="pl" kind="VAR"/>
+    <lhs xmi:id="_-5uahDprEeed9pCwOM-lzA" name="Lhs">
+      <nodes xmi:id="_-5uahTprEeed9pCwOM-lzA" name="cur" incoming="_-5uahzprEeed9pCwOM-lzA" outgoing="_FLGR8DpsEeed9pCwOM-lzA _FXg9UDpsEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State"/>
+      </nodes>
+      <nodes xmi:id="_-5uahjprEeed9pCwOM-lzA" outgoing="_-5uahzprEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+      </nodes>
+      <nodes xmi:id="_DMxkEDpsEeed9pCwOM-lzA" incoming="_FLGR8DpsEeed9pCwOM-lzA _FXg9UDpsEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//Transition"/>
+        <attributes xmi:id="_KOpEUDpsEeed9pCwOM-lzA" value="l">
+          <type href="http://transitiongraph/1.0#//Transition/label"/>
+        </attributes>
+        <attributes xmi:id="_wnA7ADv5Eee_BvaFcArrhA" value="pl">
+          <type href="http://transitiongraph/1.0#//Transition/probability"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_-5uahzprEeed9pCwOM-lzA" source="_-5uahjprEeed9pCwOM-lzA" target="_-5uahTprEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph/states"/>
+      </edges>
+      <edges xmi:id="_FLGR8DpsEeed9pCwOM-lzA" source="_-5uahTprEeed9pCwOM-lzA" target="_DMxkEDpsEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State/outgoing"/>
+      </edges>
+      <edges xmi:id="_FXg9UDpsEeed9pCwOM-lzA" source="_-5uahTprEeed9pCwOM-lzA" target="_DMxkEDpsEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State/incoming"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_-5uakDprEeed9pCwOM-lzA" name="Rhs">
+      <nodes xmi:id="_-5uakTprEeed9pCwOM-lzA" name="cur" incoming="_-5uakzprEeed9pCwOM-lzA" outgoing="_FLG5ADpsEeed9pCwOM-lzA _FXg9UTpsEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State"/>
+      </nodes>
+      <nodes xmi:id="_-5uakjprEeed9pCwOM-lzA" outgoing="_-5uakzprEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+      </nodes>
+      <nodes xmi:id="_DMyLIDpsEeed9pCwOM-lzA" incoming="_FLG5ADpsEeed9pCwOM-lzA _FXg9UTpsEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//Transition"/>
+        <attributes xmi:id="_KOpEUTpsEeed9pCwOM-lzA" value="l">
+          <type href="http://transitiongraph/1.0#//Transition/label"/>
+        </attributes>
+        <attributes xmi:id="_wnCJIDv5Eee_BvaFcArrhA" value="pl">
+          <type href="http://transitiongraph/1.0#//Transition/probability"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_-5uakzprEeed9pCwOM-lzA" source="_-5uakjprEeed9pCwOM-lzA" target="_-5uakTprEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph/states"/>
+      </edges>
+      <edges xmi:id="_FLG5ADpsEeed9pCwOM-lzA" source="_-5uakTprEeed9pCwOM-lzA" target="_DMyLIDpsEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State/outgoing"/>
+      </edges>
+      <edges xmi:id="_FXg9UTpsEeed9pCwOM-lzA" source="_-5uakTprEeed9pCwOM-lzA" target="_DMyLIDpsEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State/incoming"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_-5ualDprEeed9pCwOM-lzA" origin="_-5uahTprEeed9pCwOM-lzA" image="_-5uakTprEeed9pCwOM-lzA"/>
+    <mappings xmi:id="_-5ualTprEeed9pCwOM-lzA" origin="_-5uahjprEeed9pCwOM-lzA" image="_-5uakjprEeed9pCwOM-lzA"/>
+    <mappings xmi:id="_DMyyMDpsEeed9pCwOM-lzA" origin="_DMxkEDpsEeed9pCwOM-lzA" image="_DMyLIDpsEeed9pCwOM-lzA"/>
+    <multiRules xmi:id="_-5ualjprEeed9pCwOM-lzA" injectiveMatching="false">
+      <parameters xmi:id="_-5ualzprEeed9pCwOM-lzA" name="cur" kind="IN"/>
+      <parameters xmi:id="_-5uamDprEeed9pCwOM-lzA" name="a" kind="VAR"/>
+      <parameters xmi:id="_-5uamTprEeed9pCwOM-lzA" name="b" kind="VAR"/>
+      <parameters xmi:id="_SxxjADpsEeed9pCwOM-lzA" name="l" kind="VAR"/>
+      <parameters xmi:id="_00b9sjv5Eee_BvaFcArrhA" name="pa" kind="VAR"/>
+      <parameters xmi:id="_00b9szv5Eee_BvaFcArrhA" name="pb" kind="VAR"/>
+      <parameters xmi:id="_00b9tDv5Eee_BvaFcArrhA" name="pl" kind="VAR"/>
+      <lhs xmi:id="_-5uamjprEeed9pCwOM-lzA" name="Lhs">
+        <nodes xmi:id="_-5uamzprEeed9pCwOM-lzA" incoming="_-5uapjprEeed9pCwOM-lzA _-5uapzprEeed9pCwOM-lzA" outgoing="_-5uapDprEeed9pCwOM-lzA _FLG5AjpsEeed9pCwOM-lzA _FXg9UzpsEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+        <nodes xmi:id="_-5uanDprEeed9pCwOM-lzA" incoming="_-5uapTprEeed9pCwOM-lzA _-5uaqDprEeed9pCwOM-lzA" outgoing="_-5uapjprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition"/>
+          <attributes xmi:id="_-5uanTprEeed9pCwOM-lzA" value="a">
+            <type href="http://transitiongraph/1.0#//Transition/label"/>
+          </attributes>
+          <attributes xmi:id="_yqoYkDv5Eee_BvaFcArrhA" value="pa">
+            <type href="http://transitiongraph/1.0#//Transition/probability"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_-5uanjprEeed9pCwOM-lzA" incoming="_-5uapDprEeed9pCwOM-lzA _-5uaqTprEeed9pCwOM-lzA" outgoing="_-5uaozprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition"/>
+          <attributes xmi:id="_-5uanzprEeed9pCwOM-lzA" value="b">
+            <type href="http://transitiongraph/1.0#//Transition/label"/>
+          </attributes>
+          <attributes xmi:id="_zRxREDv5Eee_BvaFcArrhA" value="pb">
+            <type href="http://transitiongraph/1.0#//Transition/probability"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_-5uaoDprEeed9pCwOM-lzA" outgoing="_-5uapTprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+        <nodes xmi:id="_-5uaoTprEeed9pCwOM-lzA" incoming="_-5uaozprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+        <nodes xmi:id="_-5uaojprEeed9pCwOM-lzA" outgoing="_-5uapzprEeed9pCwOM-lzA _-5uaqDprEeed9pCwOM-lzA _-5uaqTprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+        </nodes>
+        <nodes xmi:id="_DM0AUTpsEeed9pCwOM-lzA" incoming="_FLG5AjpsEeed9pCwOM-lzA _FXg9UzpsEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition"/>
+        </nodes>
+        <edges xmi:id="_-5uaozprEeed9pCwOM-lzA" source="_-5uanjprEeed9pCwOM-lzA" target="_-5uaoTprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition/target"/>
+        </edges>
+        <edges xmi:id="_-5uapDprEeed9pCwOM-lzA" source="_-5uamzprEeed9pCwOM-lzA" target="_-5uanjprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State/outgoing"/>
+        </edges>
+        <edges xmi:id="_-5uapTprEeed9pCwOM-lzA" source="_-5uaoDprEeed9pCwOM-lzA" target="_-5uanDprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State/outgoing"/>
+        </edges>
+        <edges xmi:id="_-5uapjprEeed9pCwOM-lzA" source="_-5uanDprEeed9pCwOM-lzA" target="_-5uamzprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition/target"/>
+        </edges>
+        <edges xmi:id="_-5uapzprEeed9pCwOM-lzA" source="_-5uaojprEeed9pCwOM-lzA" target="_-5uamzprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/states"/>
+        </edges>
+        <edges xmi:id="_-5uaqDprEeed9pCwOM-lzA" source="_-5uaojprEeed9pCwOM-lzA" target="_-5uanDprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/transitions"/>
+        </edges>
+        <edges xmi:id="_-5uaqTprEeed9pCwOM-lzA" source="_-5uaojprEeed9pCwOM-lzA" target="_-5uanjprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/transitions"/>
+        </edges>
+        <edges xmi:id="_FLG5AjpsEeed9pCwOM-lzA" source="_-5uamzprEeed9pCwOM-lzA" target="_DM0AUTpsEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State/outgoing"/>
+        </edges>
+        <edges xmi:id="_FXg9UzpsEeed9pCwOM-lzA" source="_-5uamzprEeed9pCwOM-lzA" target="_DM0AUTpsEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State/incoming"/>
+        </edges>
+      </lhs>
+      <rhs xmi:id="_-5uaqjprEeed9pCwOM-lzA" name="Rhs">
+        <nodes xmi:id="_-5uaqzprEeed9pCwOM-lzA" incoming="_-5uatDprEeed9pCwOM-lzA _hKcU4zpwEeed9pCwOM-lzA" outgoing="_FLG5ATpsEeed9pCwOM-lzA _FXg9UjpsEeed9pCwOM-lzA _isIKETpwEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+        <nodes xmi:id="_-5uarDprEeed9pCwOM-lzA" outgoing="_-5uasTprEeed9pCwOM-lzA _hKcU4TpwEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+        <nodes xmi:id="_-5uarTprEeed9pCwOM-lzA" incoming="_-5uasjprEeed9pCwOM-lzA _isIKEzpwEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+        <nodes xmi:id="_-5uarjprEeed9pCwOM-lzA" incoming="_-5uasTprEeed9pCwOM-lzA _-5uaszprEeed9pCwOM-lzA" outgoing="_-5uasjprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition"/>
+          <attributes xmi:id="_-5uarzprEeed9pCwOM-lzA" value="a+&quot;(&quot;+l+&quot;*)&quot;+pl+b">
+            <type href="http://transitiongraph/1.0#//Transition/label"/>
+          </attributes>
+          <attributes xmi:id="_67BhcDv5Eee_BvaFcArrhA" value="pa*pb">
+            <type href="http://transitiongraph/1.0#//Transition/probability"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_-5uasDprEeed9pCwOM-lzA" outgoing="_-5uaszprEeed9pCwOM-lzA _-5uatDprEeed9pCwOM-lzA _hKcU4jpwEeed9pCwOM-lzA _isIKEjpwEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+        </nodes>
+        <nodes xmi:id="_DMzZQDpsEeed9pCwOM-lzA" incoming="_FLG5ATpsEeed9pCwOM-lzA _FXg9UjpsEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition"/>
+        </nodes>
+        <nodes xmi:id="_hKbGwDpwEeed9pCwOM-lzA" incoming="_hKcU4TpwEeed9pCwOM-lzA _hKcU4jpwEeed9pCwOM-lzA" outgoing="_hKcU4zpwEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition"/>
+          <attributes xmi:id="_hKbGwTpwEeed9pCwOM-lzA" value="a">
+            <type href="http://transitiongraph/1.0#//Transition/label"/>
+          </attributes>
+          <attributes xmi:id="_yqpmsDv5Eee_BvaFcArrhA" value="pa">
+            <type href="http://transitiongraph/1.0#//Transition/probability"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_isGU4DpwEeed9pCwOM-lzA" incoming="_isIKETpwEeed9pCwOM-lzA _isIKEjpwEeed9pCwOM-lzA" outgoing="_isIKEzpwEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition"/>
+          <attributes xmi:id="_isGU4TpwEeed9pCwOM-lzA" value="b">
+            <type href="http://transitiongraph/1.0#//Transition/label"/>
+          </attributes>
+          <attributes xmi:id="_zRx4IDv5Eee_BvaFcArrhA" value="pb">
+            <type href="http://transitiongraph/1.0#//Transition/probability"/>
+          </attributes>
+        </nodes>
+        <edges xmi:id="_-5uasTprEeed9pCwOM-lzA" source="_-5uarDprEeed9pCwOM-lzA" target="_-5uarjprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State/outgoing"/>
+        </edges>
+        <edges xmi:id="_-5uasjprEeed9pCwOM-lzA" source="_-5uarjprEeed9pCwOM-lzA" target="_-5uarTprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition/target"/>
+        </edges>
+        <edges xmi:id="_-5uaszprEeed9pCwOM-lzA" source="_-5uasDprEeed9pCwOM-lzA" target="_-5uarjprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/transitions"/>
+        </edges>
+        <edges xmi:id="_-5uatDprEeed9pCwOM-lzA" source="_-5uasDprEeed9pCwOM-lzA" target="_-5uaqzprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/states"/>
+        </edges>
+        <edges xmi:id="_FLG5ATpsEeed9pCwOM-lzA" source="_-5uaqzprEeed9pCwOM-lzA" target="_DMzZQDpsEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State/outgoing"/>
+        </edges>
+        <edges xmi:id="_FXg9UjpsEeed9pCwOM-lzA" source="_-5uaqzprEeed9pCwOM-lzA" target="_DMzZQDpsEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State/incoming"/>
+        </edges>
+        <edges xmi:id="_hKcU4TpwEeed9pCwOM-lzA" source="_-5uarDprEeed9pCwOM-lzA" target="_hKbGwDpwEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State/outgoing"/>
+        </edges>
+        <edges xmi:id="_hKcU4jpwEeed9pCwOM-lzA" source="_-5uasDprEeed9pCwOM-lzA" target="_hKbGwDpwEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/transitions"/>
+        </edges>
+        <edges xmi:id="_hKcU4zpwEeed9pCwOM-lzA" source="_hKbGwDpwEeed9pCwOM-lzA" target="_-5uaqzprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition/target"/>
+        </edges>
+        <edges xmi:id="_isIKETpwEeed9pCwOM-lzA" source="_-5uaqzprEeed9pCwOM-lzA" target="_isGU4DpwEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State/outgoing"/>
+        </edges>
+        <edges xmi:id="_isIKEjpwEeed9pCwOM-lzA" source="_-5uasDprEeed9pCwOM-lzA" target="_isGU4DpwEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/transitions"/>
+        </edges>
+        <edges xmi:id="_isIKEzpwEeed9pCwOM-lzA" source="_isGU4DpwEeed9pCwOM-lzA" target="_-5uarTprEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition/target"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_-5uatTprEeed9pCwOM-lzA" origin="_-5uamzprEeed9pCwOM-lzA" image="_-5uaqzprEeed9pCwOM-lzA"/>
+      <mappings xmi:id="_-5uatjprEeed9pCwOM-lzA" origin="_-5uaoTprEeed9pCwOM-lzA" image="_-5uarTprEeed9pCwOM-lzA"/>
+      <mappings xmi:id="_-5uatzprEeed9pCwOM-lzA" origin="_-5uaoDprEeed9pCwOM-lzA" image="_-5uarDprEeed9pCwOM-lzA"/>
+      <mappings xmi:id="_-5uauDprEeed9pCwOM-lzA" origin="_-5uaojprEeed9pCwOM-lzA" image="_-5uasDprEeed9pCwOM-lzA"/>
+      <mappings xmi:id="_DM0AUzpsEeed9pCwOM-lzA" origin="_DM0AUTpsEeed9pCwOM-lzA" image="_DMzZQDpsEeed9pCwOM-lzA"/>
+      <mappings xmi:id="_hKcU4DpwEeed9pCwOM-lzA" origin="_-5uanDprEeed9pCwOM-lzA" image="_hKbGwDpwEeed9pCwOM-lzA"/>
+      <mappings xmi:id="_isIKEDpwEeed9pCwOM-lzA" origin="_-5uanjprEeed9pCwOM-lzA" image="_isGU4DpwEeed9pCwOM-lzA"/>
+      <multiMappings xmi:id="_-5uauTprEeed9pCwOM-lzA" origin="_-5uakTprEeed9pCwOM-lzA" image="_-5uaqzprEeed9pCwOM-lzA"/>
+      <multiMappings xmi:id="_-5uaujprEeed9pCwOM-lzA" origin="_-5uahTprEeed9pCwOM-lzA" image="_-5uamzprEeed9pCwOM-lzA"/>
+      <multiMappings xmi:id="_-5uauzprEeed9pCwOM-lzA" origin="_-5uakjprEeed9pCwOM-lzA" image="_-5uasDprEeed9pCwOM-lzA"/>
+      <multiMappings xmi:id="_-5uavDprEeed9pCwOM-lzA" origin="_-5uahjprEeed9pCwOM-lzA" image="_-5uaojprEeed9pCwOM-lzA"/>
+      <multiMappings xmi:id="_DM0AUDpsEeed9pCwOM-lzA" origin="_DMyLIDpsEeed9pCwOM-lzA" image="_DMzZQDpsEeed9pCwOM-lzA"/>
+      <multiMappings xmi:id="_DM0AUjpsEeed9pCwOM-lzA" origin="_DMxkEDpsEeed9pCwOM-lzA" image="_DM0AUTpsEeed9pCwOM-lzA"/>
+    </multiRules>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_I9B2ADptEeed9pCwOM-lzA" name="delete" checkDangling="false">
+    <parameters xmi:id="_BDCTkDpwEeed9pCwOM-lzA" name="cur" kind="IN"/>
+    <lhs xmi:id="_I9DEIDptEeed9pCwOM-lzA" name="Lhs">
+      <nodes xmi:id="_LkxUUDptEeed9pCwOM-lzA" outgoing="_PjJOYDptEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+      </nodes>
+      <nodes xmi:id="_M7ZJADptEeed9pCwOM-lzA" name="cur" incoming="_PjJOYDptEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State"/>
+      </nodes>
+      <edges xmi:id="_PjJOYDptEeed9pCwOM-lzA" source="_LkxUUDptEeed9pCwOM-lzA" target="_M7ZJADptEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph/states"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_I9DEITptEeed9pCwOM-lzA" name="Rhs">
+      <nodes xmi:id="_LkzwkDptEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_LkzwkTptEeed9pCwOM-lzA" origin="_LkxUUDptEeed9pCwOM-lzA" image="_LkzwkDptEeed9pCwOM-lzA"/>
+    <multiRules xmi:id="_W8T0UDptEeed9pCwOM-lzA" name="incoming" checkDangling="false">
+      <parameters xmi:id="_cgCioTptEeed9pCwOM-lzA" name="cur" kind="IN"/>
+      <lhs xmi:id="_W8T0UTptEeed9pCwOM-lzA" name="Lhs">
+        <nodes xmi:id="_W8T0VTptEeed9pCwOM-lzA" outgoing="_W8T0WTptEeed9pCwOM-lzA _QGE8UDptEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+        </nodes>
+        <nodes xmi:id="_W8T0VzptEeed9pCwOM-lzA" incoming="_W8T0WTptEeed9pCwOM-lzA" outgoing="_Rx0scDptEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+        <nodes xmi:id="_PHvEwDptEeed9pCwOM-lzA" incoming="_QGE8UDptEeed9pCwOM-lzA _Rx0scDptEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition"/>
+        </nodes>
+        <edges xmi:id="_W8T0WTptEeed9pCwOM-lzA" source="_W8T0VTptEeed9pCwOM-lzA" target="_W8T0VzptEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/states"/>
+        </edges>
+        <edges xmi:id="_QGE8UDptEeed9pCwOM-lzA" source="_W8T0VTptEeed9pCwOM-lzA" target="_PHvEwDptEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/transitions"/>
+        </edges>
+        <edges xmi:id="_Rx0scDptEeed9pCwOM-lzA" source="_W8T0VzptEeed9pCwOM-lzA" target="_PHvEwDptEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State/incoming"/>
+        </edges>
+      </lhs>
+      <rhs xmi:id="_W8T0UjptEeed9pCwOM-lzA" name="Rhs">
+        <nodes xmi:id="_W8T0UzptEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+        </nodes>
+      </rhs>
+      <mappings xmi:id="_W8UbYzptEeed9pCwOM-lzA" origin="_W8T0VTptEeed9pCwOM-lzA" image="_W8T0UzptEeed9pCwOM-lzA"/>
+      <multiMappings xmi:id="_W8T0VDptEeed9pCwOM-lzA" origin="_LkzwkDptEeed9pCwOM-lzA" image="_W8T0UzptEeed9pCwOM-lzA"/>
+      <multiMappings xmi:id="_W8T0VjptEeed9pCwOM-lzA" origin="_LkxUUDptEeed9pCwOM-lzA" image="_W8T0VTptEeed9pCwOM-lzA"/>
+      <multiMappings xmi:id="_W8T0WDptEeed9pCwOM-lzA" origin="_M7ZJADptEeed9pCwOM-lzA" image="_W8T0VzptEeed9pCwOM-lzA"/>
+    </multiRules>
+    <multiRules xmi:id="_Y5ocojptEeed9pCwOM-lzA" name="outgoing" checkDangling="false">
+      <parameters xmi:id="_cgCiojptEeed9pCwOM-lzA" name="cur" kind="IN"/>
+      <lhs xmi:id="_Y5ocozptEeed9pCwOM-lzA" name="Lhs">
+        <nodes xmi:id="_Y5ocpzptEeed9pCwOM-lzA" outgoing="_Y5ocqzptEeed9pCwOM-lzA _Zp9tYDptEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+        </nodes>
+        <nodes xmi:id="_Y5ocqTptEeed9pCwOM-lzA" incoming="_Y5ocqzptEeed9pCwOM-lzA" outgoing="_aOIKYDptEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+        <nodes xmi:id="_Y5nOgDptEeed9pCwOM-lzA" incoming="_Zp9tYDptEeed9pCwOM-lzA _aOIKYDptEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//Transition"/>
+        </nodes>
+        <edges xmi:id="_Y5ocqzptEeed9pCwOM-lzA" source="_Y5ocpzptEeed9pCwOM-lzA" target="_Y5ocqTptEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/states"/>
+        </edges>
+        <edges xmi:id="_Zp9tYDptEeed9pCwOM-lzA" source="_Y5ocpzptEeed9pCwOM-lzA" target="_Y5nOgDptEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph/transitions"/>
+        </edges>
+        <edges xmi:id="_aOIKYDptEeed9pCwOM-lzA" source="_Y5ocqTptEeed9pCwOM-lzA" target="_Y5nOgDptEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State/outgoing"/>
+        </edges>
+      </lhs>
+      <rhs xmi:id="_Y5ocpDptEeed9pCwOM-lzA" name="Rhs">
+        <nodes xmi:id="_Y5ocpTptEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+        </nodes>
+      </rhs>
+      <mappings xmi:id="_Y5pDsDptEeed9pCwOM-lzA" origin="_Y5ocpzptEeed9pCwOM-lzA" image="_Y5ocpTptEeed9pCwOM-lzA"/>
+      <multiMappings xmi:id="_Y5ocpjptEeed9pCwOM-lzA" origin="_LkzwkDptEeed9pCwOM-lzA" image="_Y5ocpTptEeed9pCwOM-lzA"/>
+      <multiMappings xmi:id="_Y5ocqDptEeed9pCwOM-lzA" origin="_LkxUUDptEeed9pCwOM-lzA" image="_Y5ocpzptEeed9pCwOM-lzA"/>
+      <multiMappings xmi:id="_Y5ocqjptEeed9pCwOM-lzA" origin="_M7ZJADptEeed9pCwOM-lzA" image="_Y5ocqTptEeed9pCwOM-lzA"/>
+    </multiRules>
+  </units>
+  <units xsi:type="henshin:LoopUnit" xmi:id="_PoLp8DpuEeed9pCwOM-lzA" name="main" subUnit="_XTqH4DpuEeed9pCwOM-lzA"/>
+  <units xsi:type="henshin:ConditionalUnit" xmi:id="_XTqH4DpuEeed9pCwOM-lzA" name="eliminateNode" if="_OH29IDpiEeesbZUyi7IZxQ" then="_QBblgDpwEeed9pCwOM-lzA" else="_r4Mi8DpuEeed9pCwOM-lzA">
+    <parameters xmi:id="_pVbSgDriEeed9pCwOM-lzA" name="cur" kind="INOUT"/>
+    <parameterMappings xmi:id="_qDhuoDriEeed9pCwOM-lzA" source="_pVbSgDriEeed9pCwOM-lzA" target="_dV1QQDpvEeed9pCwOM-lzA"/>
+    <parameterMappings xmi:id="_qDhuoTriEeed9pCwOM-lzA" source="_dV1QQDpvEeed9pCwOM-lzA" target="_pVbSgDriEeed9pCwOM-lzA"/>
+    <parameterMappings xmi:id="_qvKFkDriEeed9pCwOM-lzA" source="_pVbSgDriEeed9pCwOM-lzA" target="_WYjfoDpwEeed9pCwOM-lzA"/>
+    <parameterMappings xmi:id="_qvKFkTriEeed9pCwOM-lzA" source="_WYjfoDpwEeed9pCwOM-lzA" target="_pVbSgDriEeed9pCwOM-lzA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_r4Mi8DpuEeed9pCwOM-lzA" name="break">
+    <lhs xmi:id="_r4OYIDpuEeed9pCwOM-lzA" name="Lhs">
+      <nodes xmi:id="_sokIkDpxEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State"/>
+        <attributes xmi:id="_tgnx8DpxEeed9pCwOM-lzA" value="true">
+          <type href="http://transitiongraph/1.0#//State/isFinal"/>
+        </attributes>
+        <attributes xmi:id="_uijJADpxEeed9pCwOM-lzA" value="true">
+          <type href="http://transitiongraph/1.0#//State/isInitial"/>
+        </attributes>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_r4OYITpuEeed9pCwOM-lzA" name="Rhs">
+      <nodes xmi:id="_sonL4DpxEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State"/>
+        <attributes xmi:id="_tgnx8TpxEeed9pCwOM-lzA" value="true">
+          <type href="http://transitiongraph/1.0#//State/isFinal"/>
+        </attributes>
+        <attributes xmi:id="_uijJATpxEeed9pCwOM-lzA" value="true">
+          <type href="http://transitiongraph/1.0#//State/isInitial"/>
+        </attributes>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_sonL4TpxEeed9pCwOM-lzA" origin="_sokIkDpxEeed9pCwOM-lzA" image="_sonL4DpxEeed9pCwOM-lzA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_mbE9gDpvEeed9pCwOM-lzA" name="isLooped">
+    <parameters xmi:id="_urSgMDpvEeed9pCwOM-lzA" name="cur" kind="IN"/>
+    <lhs xmi:id="_mbGysDpvEeed9pCwOM-lzA" name="Lhs">
+      <nodes xmi:id="_oWjLsDpvEeed9pCwOM-lzA" name="cur" outgoing="_ph0E8DpvEeed9pCwOM-lzA _pyxSEDpvEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State"/>
+      </nodes>
+      <nodes xmi:id="_ozSLADpvEeed9pCwOM-lzA" incoming="_ph0E8DpvEeed9pCwOM-lzA _pyxSEDpvEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//Transition"/>
+      </nodes>
+      <edges xmi:id="_ph0E8DpvEeed9pCwOM-lzA" source="_oWjLsDpvEeed9pCwOM-lzA" target="_ozSLADpvEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State/outgoing"/>
+      </edges>
+      <edges xmi:id="_pyxSEDpvEeed9pCwOM-lzA" source="_oWjLsDpvEeed9pCwOM-lzA" target="_ozSLADpvEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State/incoming"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_mbGysTpvEeed9pCwOM-lzA" name="Rhs">
+      <nodes xmi:id="_oWjLsTpvEeed9pCwOM-lzA" name="cur" outgoing="_ph0E8TpvEeed9pCwOM-lzA _pyxSETpvEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State"/>
+      </nodes>
+      <nodes xmi:id="_ozSLATpvEeed9pCwOM-lzA" incoming="_ph0E8TpvEeed9pCwOM-lzA _pyxSETpvEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//Transition"/>
+      </nodes>
+      <edges xmi:id="_ph0E8TpvEeed9pCwOM-lzA" source="_oWjLsTpvEeed9pCwOM-lzA" target="_ozSLATpvEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State/outgoing"/>
+      </edges>
+      <edges xmi:id="_pyxSETpvEeed9pCwOM-lzA" source="_oWjLsTpvEeed9pCwOM-lzA" target="_ozSLATpvEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State/incoming"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_oWjLsjpvEeed9pCwOM-lzA" origin="_oWjLsDpvEeed9pCwOM-lzA" image="_oWjLsTpvEeed9pCwOM-lzA"/>
+    <mappings xmi:id="_ozSLAjpvEeed9pCwOM-lzA" origin="_ozSLADpvEeed9pCwOM-lzA" image="_ozSLATpvEeed9pCwOM-lzA"/>
+  </units>
+  <units xsi:type="henshin:SequentialUnit" xmi:id="_QBblgDpwEeed9pCwOM-lzA" name="eliminate" subUnits="_VSWlwDriEeed9pCwOM-lzA _I9B2ADptEeed9pCwOM-lzA _Gu0JoDp7Eeed9pCwOM-lzA _Y64X0DqDEeed9pCwOM-lzA">
+    <parameters xmi:id="_WYjfoDpwEeed9pCwOM-lzA" name="cur" kind="IN"/>
+    <parameterMappings xmi:id="_cJL6sDriEeed9pCwOM-lzA" source="_WYjfoDpwEeed9pCwOM-lzA" target="_XbgqoDriEeed9pCwOM-lzA"/>
+    <parameterMappings xmi:id="_cJL6sTriEeed9pCwOM-lzA" source="_XbgqoDriEeed9pCwOM-lzA" target="_WYjfoDpwEeed9pCwOM-lzA"/>
+    <parameterMappings xmi:id="_vb0pADriEeed9pCwOM-lzA" source="_WYjfoDpwEeed9pCwOM-lzA" target="_BDCTkDpwEeed9pCwOM-lzA"/>
+    <parameterMappings xmi:id="_vb13IDriEeed9pCwOM-lzA" source="_BDCTkDpwEeed9pCwOM-lzA" target="_WYjfoDpwEeed9pCwOM-lzA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_iN6SIDpyEeed9pCwOM-lzA" name="unifyTransitionsMulti" description="">
+    <parameters xmi:id="_Utt8MDp1Eeed9pCwOM-lzA" name="x" kind="VAR"/>
+    <parameters xmi:id="_UtvKUDp1Eeed9pCwOM-lzA" name="y" kind="VAR"/>
+    <parameters xmi:id="_OQWXYDv6Eee_BvaFcArrhA" name="px" kind="VAR"/>
+    <parameters xmi:id="_OQXlgDv6Eee_BvaFcArrhA" name="py" kind="VAR"/>
+    <lhs xmi:id="_iN9VcDpyEeed9pCwOM-lzA" name="Lhs">
+      <nodes xmi:id="_RgwpQDp7Eeed9pCwOM-lzA" incoming="_ZP4REDp7Eeed9pCwOM-lzA" outgoing="_Uk5IoDp7Eeed9pCwOM-lzA _U6tnoDp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State"/>
+      </nodes>
+      <nodes xmi:id="_Syog0Dp7Eeed9pCwOM-lzA" incoming="_Uk5IoDp7Eeed9pCwOM-lzA _i4fKEDp7Eeed9pCwOM-lzA" outgoing="_ilgjsDp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//Transition"/>
+        <attributes xmi:id="_pzB6UDp7Eeed9pCwOM-lzA" value="y">
+          <type href="http://transitiongraph/1.0#//Transition/label"/>
+        </attributes>
+        <attributes xmi:id="_SNCPYDv6Eee_BvaFcArrhA" value="py">
+          <type href="http://transitiongraph/1.0#//Transition/probability"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_TsMmEDp7Eeed9pCwOM-lzA" incoming="_WEG4oDp7Eeed9pCwOM-lzA _ilgjsDp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State"/>
+      </nodes>
+      <nodes xmi:id="_UFhsEDp7Eeed9pCwOM-lzA" incoming="_U6tnoDp7Eeed9pCwOM-lzA" outgoing="_WEG4oDp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//Transition"/>
+        <attributes xmi:id="_mNEgQDp7Eeed9pCwOM-lzA" value="x">
+          <type href="http://transitiongraph/1.0#//Transition/label"/>
+        </attributes>
+        <attributes xmi:id="_ZAEpcDv6Eee_BvaFcArrhA" value="px">
+          <type href="http://transitiongraph/1.0#//Transition/probability"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_X7ClEDp7Eeed9pCwOM-lzA" outgoing="_ZP4REDp7Eeed9pCwOM-lzA _i4fKEDp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+      </nodes>
+      <edges xmi:id="_Uk5IoDp7Eeed9pCwOM-lzA" source="_RgwpQDp7Eeed9pCwOM-lzA" target="_Syog0Dp7Eeed9pCwOM-lzA" index="">
+        <type href="http://transitiongraph/1.0#//State/outgoing"/>
+      </edges>
+      <edges xmi:id="_U6tnoDp7Eeed9pCwOM-lzA" source="_RgwpQDp7Eeed9pCwOM-lzA" target="_UFhsEDp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State/outgoing"/>
+      </edges>
+      <edges xmi:id="_WEG4oDp7Eeed9pCwOM-lzA" source="_UFhsEDp7Eeed9pCwOM-lzA" target="_TsMmEDp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//Transition/target"/>
+      </edges>
+      <edges xmi:id="_ZP4REDp7Eeed9pCwOM-lzA" source="_X7ClEDp7Eeed9pCwOM-lzA" target="_RgwpQDp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph/states"/>
+      </edges>
+      <edges xmi:id="_ilgjsDp7Eeed9pCwOM-lzA" source="_Syog0Dp7Eeed9pCwOM-lzA" target="_TsMmEDp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//Transition/target"/>
+      </edges>
+      <edges xmi:id="_i4fKEDp7Eeed9pCwOM-lzA" source="_X7ClEDp7Eeed9pCwOM-lzA" target="_Syog0Dp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph/transitions"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_iN9VcTpyEeed9pCwOM-lzA" name="Rhs">
+      <nodes xmi:id="_Rgx3YDp7Eeed9pCwOM-lzA" incoming="_ZP4RETp7Eeed9pCwOM-lzA" outgoing="_U6tnoTp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State"/>
+      </nodes>
+      <nodes xmi:id="_TsN0MDp7Eeed9pCwOM-lzA" incoming="_WEG4oTp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State"/>
+      </nodes>
+      <nodes xmi:id="_UFhsETp7Eeed9pCwOM-lzA" incoming="_U6tnoTp7Eeed9pCwOM-lzA" outgoing="_WEG4oTp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//Transition"/>
+        <attributes xmi:id="_mNFHUDp7Eeed9pCwOM-lzA" value="x+&quot;[&quot;+(200*px)+&quot;]|&quot;+y+&quot;[&quot;+(200*py)+&quot;]&quot;">
+          <type href="http://transitiongraph/1.0#//Transition/label"/>
+        </attributes>
+        <attributes xmi:id="_ZAF3kDv6Eee_BvaFcArrhA" value="(px+py)">
+          <type href="http://transitiongraph/1.0#//Transition/probability"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_X7DMIDp7Eeed9pCwOM-lzA" outgoing="_ZP4RETp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+      </nodes>
+      <edges xmi:id="_U6tnoTp7Eeed9pCwOM-lzA" source="_Rgx3YDp7Eeed9pCwOM-lzA" target="_UFhsETp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State/outgoing"/>
+      </edges>
+      <edges xmi:id="_WEG4oTp7Eeed9pCwOM-lzA" source="_UFhsETp7Eeed9pCwOM-lzA" target="_TsN0MDp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//Transition/target"/>
+      </edges>
+      <edges xmi:id="_ZP4RETp7Eeed9pCwOM-lzA" source="_X7DMIDp7Eeed9pCwOM-lzA" target="_Rgx3YDp7Eeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph/states"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_Rgx3YTp7Eeed9pCwOM-lzA" origin="_RgwpQDp7Eeed9pCwOM-lzA" image="_Rgx3YDp7Eeed9pCwOM-lzA"/>
+    <mappings xmi:id="_TsN0MTp7Eeed9pCwOM-lzA" origin="_TsMmEDp7Eeed9pCwOM-lzA" image="_TsN0MDp7Eeed9pCwOM-lzA"/>
+    <mappings xmi:id="_UFhsEjp7Eeed9pCwOM-lzA" origin="_UFhsEDp7Eeed9pCwOM-lzA" image="_UFhsETp7Eeed9pCwOM-lzA"/>
+    <mappings xmi:id="_X7DMITp7Eeed9pCwOM-lzA" origin="_X7ClEDp7Eeed9pCwOM-lzA" image="_X7DMIDp7Eeed9pCwOM-lzA"/>
+  </units>
+  <units xsi:type="henshin:LoopUnit" xmi:id="_Gu0JoDp7Eeed9pCwOM-lzA" name="unifyRedundantTransitionsA" subUnit="_iN6SIDpyEeed9pCwOM-lzA"/>
+  <units xsi:type="henshin:Rule" xmi:id="_PexC3TqDEeed9pCwOM-lzA" name="unifyTransitionsUni" description="" checkDangling="false">
+    <parameters xmi:id="_PexC3jqDEeed9pCwOM-lzA" name="x" kind="VAR"/>
+    <parameters xmi:id="_PexC3zqDEeed9pCwOM-lzA" name="y" kind="VAR"/>
+    <lhs xmi:id="_PexC4jqDEeed9pCwOM-lzA" name="Lhs">
+      <nodes xmi:id="_PexC4zqDEeed9pCwOM-lzA" incoming="_PexC7TqDEeed9pCwOM-lzA" outgoing="_8UwPcDqDEeed9pCwOM-lzA _8fvXcDqDEeed9pCwOM-lzA _83cs0DqDEeed9pCwOM-lzA _9CzBMDqDEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State"/>
+      </nodes>
+      <nodes xmi:id="_PexC5DqDEeed9pCwOM-lzA" incoming="_1nd4EDqDEeed9pCwOM-lzA _83cs0DqDEeed9pCwOM-lzA _9CzBMDqDEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//Transition"/>
+        <attributes xmi:id="_PexC5TqDEeed9pCwOM-lzA" value="y">
+          <type href="http://transitiongraph/1.0#//Transition/label"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_PexC5zqDEeed9pCwOM-lzA" incoming="_8UwPcDqDEeed9pCwOM-lzA _8fvXcDqDEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//Transition"/>
+        <attributes xmi:id="_PexC6DqDEeed9pCwOM-lzA" value="x">
+          <type href="http://transitiongraph/1.0#//Transition/label"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_PexC6TqDEeed9pCwOM-lzA" outgoing="_PexC7TqDEeed9pCwOM-lzA _1nd4EDqDEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+      </nodes>
+      <edges xmi:id="_PexC7TqDEeed9pCwOM-lzA" source="_PexC6TqDEeed9pCwOM-lzA" target="_PexC4zqDEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph/states"/>
+      </edges>
+      <edges xmi:id="_1nd4EDqDEeed9pCwOM-lzA" source="_PexC6TqDEeed9pCwOM-lzA" target="_PexC5DqDEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph/transitions"/>
+      </edges>
+      <edges xmi:id="_8UwPcDqDEeed9pCwOM-lzA" source="_PexC4zqDEeed9pCwOM-lzA" target="_PexC5zqDEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State/incoming"/>
+      </edges>
+      <edges xmi:id="_8fvXcDqDEeed9pCwOM-lzA" source="_PexC4zqDEeed9pCwOM-lzA" target="_PexC5zqDEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State/outgoing"/>
+      </edges>
+      <edges xmi:id="_83cs0DqDEeed9pCwOM-lzA" source="_PexC4zqDEeed9pCwOM-lzA" target="_PexC5DqDEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State/outgoing"/>
+      </edges>
+      <edges xmi:id="_9CzBMDqDEeed9pCwOM-lzA" source="_PexC4zqDEeed9pCwOM-lzA" target="_PexC5DqDEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State/incoming"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_PexC8DqDEeed9pCwOM-lzA" name="Rhs">
+      <nodes xmi:id="_PexC8TqDEeed9pCwOM-lzA" incoming="_PexC-DqDEeed9pCwOM-lzA" outgoing="_8UwPcTqDEeed9pCwOM-lzA _8fvXcTqDEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State"/>
+      </nodes>
+      <nodes xmi:id="_PexC8zqDEeed9pCwOM-lzA" incoming="_8UwPcTqDEeed9pCwOM-lzA _8fvXcTqDEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//Transition"/>
+        <attributes xmi:id="_PexC9DqDEeed9pCwOM-lzA" value="x+&quot;|&quot;+y">
+          <type href="http://transitiongraph/1.0#//Transition/label"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_PexC9TqDEeed9pCwOM-lzA" outgoing="_PexC-DqDEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph"/>
+      </nodes>
+      <edges xmi:id="_PexC-DqDEeed9pCwOM-lzA" source="_PexC9TqDEeed9pCwOM-lzA" target="_PexC8TqDEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//TransitionGraph/states"/>
+      </edges>
+      <edges xmi:id="_8UwPcTqDEeed9pCwOM-lzA" source="_PexC8TqDEeed9pCwOM-lzA" target="_PexC8zqDEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State/incoming"/>
+      </edges>
+      <edges xmi:id="_8fvXcTqDEeed9pCwOM-lzA" source="_PexC8TqDEeed9pCwOM-lzA" target="_PexC8zqDEeed9pCwOM-lzA">
+        <type href="http://transitiongraph/1.0#//State/outgoing"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_PexC-TqDEeed9pCwOM-lzA" origin="_PexC4zqDEeed9pCwOM-lzA" image="_PexC8TqDEeed9pCwOM-lzA"/>
+    <mappings xmi:id="_PexC-zqDEeed9pCwOM-lzA" origin="_PexC5zqDEeed9pCwOM-lzA" image="_PexC8zqDEeed9pCwOM-lzA"/>
+    <mappings xmi:id="_PexC_DqDEeed9pCwOM-lzA" origin="_PexC6TqDEeed9pCwOM-lzA" image="_PexC9TqDEeed9pCwOM-lzA"/>
+  </units>
+  <units xsi:type="henshin:LoopUnit" xmi:id="_Y64X0DqDEeed9pCwOM-lzA" name="unifyRedundantTransitionsB" subUnit="_PexC3TqDEeed9pCwOM-lzA"/>
+  <units xsi:type="henshin:ConditionalUnit" xmi:id="_VSWlwDriEeed9pCwOM-lzA" name="fixTransitions" if="_mbE9gDpvEeed9pCwOM-lzA" then="_-5uagDprEeed9pCwOM-lzA" else="_ZI8PgDpjEeeOyInNHnF0QQ">
+    <parameters xmi:id="_XbgqoDriEeed9pCwOM-lzA" name="cur" kind="INOUT"/>
+    <parameterMappings xmi:id="_Y9go4DriEeed9pCwOM-lzA" source="_XbgqoDriEeed9pCwOM-lzA" target="_urSgMDpvEeed9pCwOM-lzA"/>
+    <parameterMappings xmi:id="_Y9go4TriEeed9pCwOM-lzA" source="_urSgMDpvEeed9pCwOM-lzA" target="_XbgqoDriEeed9pCwOM-lzA"/>
+    <parameterMappings xmi:id="_ECWoIDrjEeed9pCwOM-lzA" source="_XbgqoDriEeed9pCwOM-lzA" target="__yDz4DpvEeed9pCwOM-lzA"/>
+    <parameterMappings xmi:id="_ECX2QDrjEeed9pCwOM-lzA" source="__yDz4DpvEeed9pCwOM-lzA" target="_XbgqoDriEeed9pCwOM-lzA"/>
+    <parameterMappings xmi:id="_GGXHQDrjEeed9pCwOM-lzA" source="_XbgqoDriEeed9pCwOM-lzA" target="_K0HMEDpwEeed9pCwOM-lzA"/>
+    <parameterMappings xmi:id="_GGYVYDrjEeed9pCwOM-lzA" source="_K0HMEDpwEeed9pCwOM-lzA" target="_XbgqoDriEeed9pCwOM-lzA"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_Aj8n8DstEeed9pCwOM-lzA" name="recalculateProbsTemp">
+    <parameters xmi:id="_D6QKgDsvEeed9pCwOM-lzA" name="a" kind="VAR"/>
+    <lhs xmi:id="_AkBgcDstEeed9pCwOM-lzA" name="Lhs"/>
+    <rhs xmi:id="_AkBgcTstEeed9pCwOM-lzA" name="Rhs"/>
+    <multiRules xmi:id="_4jPkEDswEeed9pCwOM-lzA" name="states">
+      <parameters xmi:id="_4jQyMDswEeed9pCwOM-lzA" name="a" kind="VAR"/>
+      <lhs xmi:id="_4jPkETswEeed9pCwOM-lzA" name="Lhs">
+        <nodes xmi:id="_Fa5IwDstEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+      </lhs>
+      <rhs xmi:id="_4jPkEjswEeed9pCwOM-lzA" name="Rhs">
+        <nodes xmi:id="_Fa5v0DstEeed9pCwOM-lzA" incoming="_e8TwsDsxEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+        <nodes xmi:id="_eH5RMDsxEeed9pCwOM-lzA" outgoing="_e8TwsDsxEeed9pCwOM-lzA">
+          <type href="http://www.eclipse.org/emf/2011/Henshin/Trace#//Trace"/>
+          <attributes xmi:id="_f2e58DsxEeed9pCwOM-lzA" value="Aggregations.SUM(a)">
+            <type href="http://www.eclipse.org/emf/2011/Henshin/Trace#//Trace/name"/>
+          </attributes>
+        </nodes>
+        <edges xmi:id="_e8TwsDsxEeed9pCwOM-lzA" source="_eH5RMDsxEeed9pCwOM-lzA" target="_Fa5v0DstEeed9pCwOM-lzA">
+          <type href="http://www.eclipse.org/emf/2011/Henshin/Trace#//Trace/source"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_Fa5v0TstEeed9pCwOM-lzA" origin="_Fa5IwDstEeed9pCwOM-lzA" image="_Fa5v0DstEeed9pCwOM-lzA"/>
+      <multiRules xmi:id="_6gbpgDswEeed9pCwOM-lzA" name="transitions">
+        <parameters xmi:id="_6gcQkDswEeed9pCwOM-lzA" name="a" kind="VAR"/>
+        <lhs xmi:id="_6gbpgTswEeed9pCwOM-lzA" name="Lhs">
+          <nodes xmi:id="_6gbphTswEeed9pCwOM-lzA" outgoing="__3wTgDswEeed9pCwOM-lzA">
+            <type href="http://transitiongraph/1.0#//State"/>
+          </nodes>
+          <nodes xmi:id="_5kbUQDswEeed9pCwOM-lzA" incoming="__3wTgDswEeed9pCwOM-lzA">
+            <type href="http://transitiongraph/1.0#//Transition"/>
+            <attributes xmi:id="_8alpEDswEeed9pCwOM-lzA" value="a">
+              <type href="http://transitiongraph/1.0#//Transition/probability"/>
+            </attributes>
+          </nodes>
+          <edges xmi:id="__3wTgDswEeed9pCwOM-lzA" source="_6gbphTswEeed9pCwOM-lzA" target="_5kbUQDswEeed9pCwOM-lzA">
+            <type href="http://transitiongraph/1.0#//State/outgoing"/>
+          </edges>
+          <formula xsi:type="henshin:And" xmi:id="_BNJm4Ds2Eeev85Z0ItTETA">
+            <left xsi:type="henshin:And" xmi:id="__jm2MDs1Eeev85Z0ItTETA">
+              <left xsi:type="henshin:Not" xmi:id="_78xSYTs1Eeev85Z0ItTETA">
+                <child xsi:type="henshin:NestedCondition" xmi:id="_78xSYjs1Eeev85Z0ItTETA">
+                  <conclusion xmi:id="_78xSYzs1Eeev85Z0ItTETA" name="1">
+                    <nodes xmi:id="_78xSZDs1Eeev85Z0ItTETA" outgoing="_8xkB0Ds0Eeev85Z0ItTETA">
+                      <type href="http://transitiongraph/1.0#//Transition"/>
+                      <attributes xmi:id="_78xSZTs1Eeev85Z0ItTETA" value="a">
+                        <type href="http://transitiongraph/1.0#//Transition/probability"/>
+                      </attributes>
+                    </nodes>
+                    <nodes xmi:id="_78xSZzs1Eeev85Z0ItTETA" incoming="_8xkB0Ds0Eeev85Z0ItTETA">
+                      <type href="http://transitiongraph/1.0#//State"/>
+                    </nodes>
+                    <edges xmi:id="_8xkB0Ds0Eeev85Z0ItTETA" source="_78xSZDs1Eeev85Z0ItTETA" target="_78xSZzs1Eeev85Z0ItTETA">
+                      <type href="http://transitiongraph/1.0#//Transition/target"/>
+                    </edges>
+                  </conclusion>
+                  <mappings xmi:id="_78xSZjs1Eeev85Z0ItTETA" origin="_5kbUQDswEeed9pCwOM-lzA" image="_78xSZDs1Eeev85Z0ItTETA"/>
+                  <mappings xmi:id="_78xSaDs1Eeev85Z0ItTETA" origin="_6gbphTswEeed9pCwOM-lzA" image="_78xSZzs1Eeev85Z0ItTETA"/>
+                </child>
+              </left>
+              <right xsi:type="henshin:Not" xmi:id="__jm2MTs1Eeev85Z0ItTETA">
+                <child xsi:type="henshin:NestedCondition" xmi:id="__jm2Mjs1Eeev85Z0ItTETA">
+                  <conclusion xmi:id="__jm2Mzs1Eeev85Z0ItTETA" name="2">
+                    <nodes xmi:id="__jm2NDs1Eeev85Z0ItTETA" incoming="__jndQDs1Eeev85Z0ItTETA">
+                      <type href="http://transitiongraph/1.0#//Transition"/>
+                      <attributes xmi:id="__jm2NTs1Eeev85Z0ItTETA" value="a">
+                        <type href="http://transitiongraph/1.0#//Transition/probability"/>
+                      </attributes>
+                      <attributes xmi:id="_88nl0Ds1Eeev85Z0ItTETA" value="&quot;&quot;">
+                        <type href="http://transitiongraph/1.0#//Transition/label"/>
+                      </attributes>
+                    </nodes>
+                    <nodes xmi:id="__jm2ODs1Eeev85Z0ItTETA" outgoing="__jndQDs1Eeev85Z0ItTETA">
+                      <type href="http://transitiongraph/1.0#//State"/>
+                    </nodes>
+                    <edges xmi:id="__jndQDs1Eeev85Z0ItTETA" source="__jm2ODs1Eeev85Z0ItTETA" target="__jm2NDs1Eeev85Z0ItTETA">
+                      <type href="http://transitiongraph/1.0#//State/outgoing"/>
+                    </edges>
+                  </conclusion>
+                  <mappings xmi:id="__jm2Nzs1Eeev85Z0ItTETA" origin="_5kbUQDswEeed9pCwOM-lzA" image="__jm2NDs1Eeev85Z0ItTETA"/>
+                  <mappings xmi:id="__jm2OTs1Eeev85Z0ItTETA" origin="_6gbphTswEeed9pCwOM-lzA" image="__jm2ODs1Eeev85Z0ItTETA"/>
+                </child>
+              </right>
+            </left>
+            <right xsi:type="henshin:Not" xmi:id="_BNJm4Ts2Eeev85Z0ItTETA">
+              <child xsi:type="henshin:NestedCondition" xmi:id="_BNJm4js2Eeev85Z0ItTETA">
+                <conclusion xmi:id="_BNJm4zs2Eeev85Z0ItTETA" name="3">
+                  <nodes xmi:id="_BNJm5Ds2Eeev85Z0ItTETA" incoming="_BNKN8js2Eeev85Z0ItTETA">
+                    <type href="http://transitiongraph/1.0#//Transition"/>
+                    <attributes xmi:id="_BNJm5Ts2Eeev85Z0ItTETA" value="a">
+                      <type href="http://transitiongraph/1.0#//Transition/probability"/>
+                    </attributes>
+                    <attributes xmi:id="_88pbATs1Eeev85Z0ItTETA" value="&quot;eps&quot;">
+                      <type href="http://transitiongraph/1.0#//Transition/label"/>
+                    </attributes>
+                  </nodes>
+                  <nodes xmi:id="_BNKN8Ds2Eeev85Z0ItTETA" outgoing="_BNKN8js2Eeev85Z0ItTETA">
+                    <type href="http://transitiongraph/1.0#//State"/>
+                  </nodes>
+                  <edges xmi:id="_BNKN8js2Eeev85Z0ItTETA" source="_BNKN8Ds2Eeev85Z0ItTETA" target="_BNJm5Ds2Eeev85Z0ItTETA">
+                    <type href="http://transitiongraph/1.0#//State/outgoing"/>
+                  </edges>
+                </conclusion>
+                <mappings xmi:id="_BNJm5zs2Eeev85Z0ItTETA" origin="_5kbUQDswEeed9pCwOM-lzA" image="_BNJm5Ds2Eeev85Z0ItTETA"/>
+                <mappings xmi:id="_BNKN8Ts2Eeev85Z0ItTETA" origin="_6gbphTswEeed9pCwOM-lzA" image="_BNKN8Ds2Eeev85Z0ItTETA"/>
+              </child>
+            </right>
+          </formula>
+        </lhs>
+        <rhs xmi:id="_6gbpgjswEeed9pCwOM-lzA" name="Rhs">
+          <nodes xmi:id="_6gbpgzswEeed9pCwOM-lzA" incoming="_e8TwszsxEeed9pCwOM-lzA" outgoing="__3w6kDswEeed9pCwOM-lzA">
+            <type href="http://transitiongraph/1.0#//State"/>
+          </nodes>
+          <nodes xmi:id="_5kbUQTswEeed9pCwOM-lzA" incoming="__3w6kDswEeed9pCwOM-lzA">
+            <type href="http://transitiongraph/1.0#//Transition"/>
+            <attributes xmi:id="_8am3MDswEeed9pCwOM-lzA" value="a">
+              <type href="http://transitiongraph/1.0#//Transition/probability"/>
+            </attributes>
+          </nodes>
+          <nodes xmi:id="_e8TwsTsxEeed9pCwOM-lzA" outgoing="_e8TwszsxEeed9pCwOM-lzA">
+            <type href="http://www.eclipse.org/emf/2011/Henshin/Trace#//Trace"/>
+          </nodes>
+          <edges xmi:id="__3w6kDswEeed9pCwOM-lzA" source="_6gbpgzswEeed9pCwOM-lzA" target="_5kbUQTswEeed9pCwOM-lzA">
+            <type href="http://transitiongraph/1.0#//State/outgoing"/>
+          </edges>
+          <edges xmi:id="_e8TwszsxEeed9pCwOM-lzA" source="_e8TwsTsxEeed9pCwOM-lzA" target="_6gbpgzswEeed9pCwOM-lzA">
+            <type href="http://www.eclipse.org/emf/2011/Henshin/Trace#//Trace/source"/>
+          </edges>
+        </rhs>
+        <mappings xmi:id="_6gbphzswEeed9pCwOM-lzA" origin="_6gbphTswEeed9pCwOM-lzA" image="_6gbpgzswEeed9pCwOM-lzA"/>
+        <mappings xmi:id="_5kbUQjswEeed9pCwOM-lzA" origin="_5kbUQDswEeed9pCwOM-lzA" image="_5kbUQTswEeed9pCwOM-lzA"/>
+        <multiMappings xmi:id="_6gbphDswEeed9pCwOM-lzA" origin="_Fa5v0DstEeed9pCwOM-lzA" image="_6gbpgzswEeed9pCwOM-lzA"/>
+        <multiMappings xmi:id="_6gbphjswEeed9pCwOM-lzA" origin="_Fa5IwDstEeed9pCwOM-lzA" image="_6gbphTswEeed9pCwOM-lzA"/>
+        <multiMappings xmi:id="_e8TwsjsxEeed9pCwOM-lzA" origin="_eH5RMDsxEeed9pCwOM-lzA" image="_e8TwsTsxEeed9pCwOM-lzA"/>
+      </multiRules>
+    </multiRules>
+    <javaImports>org.eclipse.emf.henshin.interpreter.util.Aggregations</javaImports>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_o3IwMDszEeed9pCwOM-lzA" name="recalculateProbsUpdate">
+    <parameters xmi:id="_o3IwMTszEeed9pCwOM-lzA" name="a" kind="VAR"/>
+    <parameters xmi:id="_G5QgADs0Eeev85Z0ItTETA" name="b" kind="VAR"/>
+    <lhs xmi:id="_o3IwMjszEeed9pCwOM-lzA" name="Lhs"/>
+    <rhs xmi:id="_o3IwMzszEeed9pCwOM-lzA" name="Rhs"/>
+    <multiRules xmi:id="_o3IwNDszEeed9pCwOM-lzA" name="states">
+      <parameters xmi:id="_o3IwNTszEeed9pCwOM-lzA" name="a" kind="VAR"/>
+      <parameters xmi:id="_G5V_kDs0Eeev85Z0ItTETA" name="b" kind="VAR"/>
+      <lhs xmi:id="_o3IwNjszEeed9pCwOM-lzA" name="Lhs">
+        <nodes xmi:id="_o3IwNzszEeed9pCwOM-lzA" incoming="_o3IwPDszEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+        <nodes xmi:id="_o3IwOjszEeed9pCwOM-lzA" outgoing="_o3IwPDszEeed9pCwOM-lzA">
+          <type href="http://www.eclipse.org/emf/2011/Henshin/Trace#//Trace"/>
+          <attributes xmi:id="_o3IwOzszEeed9pCwOM-lzA" value="a">
+            <type href="http://www.eclipse.org/emf/2011/Henshin/Trace#//Trace/name"/>
+          </attributes>
+        </nodes>
+        <edges xmi:id="_o3IwPDszEeed9pCwOM-lzA" source="_o3IwOjszEeed9pCwOM-lzA" target="_o3IwNzszEeed9pCwOM-lzA">
+          <type href="http://www.eclipse.org/emf/2011/Henshin/Trace#//Trace/source"/>
+        </edges>
+      </lhs>
+      <rhs xmi:id="_o3IwODszEeed9pCwOM-lzA" name="Rhs">
+        <nodes xmi:id="_o3IwOTszEeed9pCwOM-lzA">
+          <type href="http://transitiongraph/1.0#//State"/>
+        </nodes>
+      </rhs>
+      <mappings xmi:id="_o3IwPTszEeed9pCwOM-lzA" origin="_o3IwNzszEeed9pCwOM-lzA" image="_o3IwOTszEeed9pCwOM-lzA"/>
+      <multiRules xmi:id="_o3IwPjszEeed9pCwOM-lzA" name="transitions">
+        <parameters xmi:id="_o3IwPzszEeed9pCwOM-lzA" name="a" kind="VAR"/>
+        <parameters xmi:id="_G5V_kTs0Eeev85Z0ItTETA" name="b" kind="VAR"/>
+        <lhs xmi:id="_o3IwQDszEeed9pCwOM-lzA" name="Lhs">
+          <nodes xmi:id="_o3IwQTszEeed9pCwOM-lzA" incoming="_o3IwSzszEeed9pCwOM-lzA" outgoing="_o3IwRDszEeed9pCwOM-lzA">
+            <type href="http://transitiongraph/1.0#//State"/>
+          </nodes>
+          <nodes xmi:id="_o3IwQjszEeed9pCwOM-lzA" incoming="_o3IwRDszEeed9pCwOM-lzA">
+            <type href="http://transitiongraph/1.0#//Transition"/>
+            <attributes xmi:id="_o3IwQzszEeed9pCwOM-lzA" value="b">
+              <type href="http://transitiongraph/1.0#//Transition/probability"/>
+            </attributes>
+          </nodes>
+          <nodes xmi:id="_o3IwSTszEeed9pCwOM-lzA" outgoing="_o3IwSzszEeed9pCwOM-lzA">
+            <type href="http://www.eclipse.org/emf/2011/Henshin/Trace#//Trace"/>
+          </nodes>
+          <edges xmi:id="_o3IwRDszEeed9pCwOM-lzA" source="_o3IwQTszEeed9pCwOM-lzA" target="_o3IwQjszEeed9pCwOM-lzA">
+            <type href="http://transitiongraph/1.0#//State/outgoing"/>
+          </edges>
+          <edges xmi:id="_o3IwSzszEeed9pCwOM-lzA" source="_o3IwSTszEeed9pCwOM-lzA" target="_o3IwQTszEeed9pCwOM-lzA">
+            <type href="http://www.eclipse.org/emf/2011/Henshin/Trace#//Trace/source"/>
+          </edges>
+          <formula xsi:type="henshin:And" xmi:id="_TB4MwDs2Eeev85Z0ItTETA">
+            <left xsi:type="henshin:And" xmi:id="_SF9XEDs2Eeev85Z0ItTETA">
+              <left xsi:type="henshin:Not" xmi:id="_ObX7sTs2Eeev85Z0ItTETA">
+                <child xsi:type="henshin:NestedCondition" xmi:id="_ObX7sjs2Eeev85Z0ItTETA">
+                  <conclusion xmi:id="_ObX7szs2Eeev85Z0ItTETA" name="2">
+                    <nodes xmi:id="_ObX7tDs2Eeev85Z0ItTETA" incoming="_ObX7ujs2Eeev85Z0ItTETA">
+                      <type href="http://transitiongraph/1.0#//Transition"/>
+                      <attributes xmi:id="_ObX7tTs2Eeev85Z0ItTETA" value="b">
+                        <type href="http://transitiongraph/1.0#//Transition/probability"/>
+                      </attributes>
+                      <attributes xmi:id="_N-BRUDs2Eeev85Z0ItTETA" value="&quot;eps&quot;">
+                        <type href="http://transitiongraph/1.0#//Transition/label"/>
+                      </attributes>
+                    </nodes>
+                    <nodes xmi:id="_ObX7uDs2Eeev85Z0ItTETA" outgoing="_ObX7ujs2Eeev85Z0ItTETA">
+                      <type href="http://transitiongraph/1.0#//State"/>
+                    </nodes>
+                    <edges xmi:id="_ObX7ujs2Eeev85Z0ItTETA" source="_ObX7uDs2Eeev85Z0ItTETA" target="_ObX7tDs2Eeev85Z0ItTETA">
+                      <type href="http://transitiongraph/1.0#//State/outgoing"/>
+                    </edges>
+                  </conclusion>
+                  <mappings xmi:id="_ObX7tzs2Eeev85Z0ItTETA" origin="_o3IwQjszEeed9pCwOM-lzA" image="_ObX7tDs2Eeev85Z0ItTETA"/>
+                  <mappings xmi:id="_ObX7uTs2Eeev85Z0ItTETA" origin="_o3IwQTszEeed9pCwOM-lzA" image="_ObX7uDs2Eeev85Z0ItTETA"/>
+                </child>
+              </left>
+              <right xsi:type="henshin:Not" xmi:id="_SF9XETs2Eeev85Z0ItTETA">
+                <child xsi:type="henshin:NestedCondition" xmi:id="_SF9XEjs2Eeev85Z0ItTETA">
+                  <conclusion xmi:id="_SF9XEzs2Eeev85Z0ItTETA" name="3">
+                    <nodes xmi:id="_SF9-IDs2Eeev85Z0ItTETA" incoming="_SF-lMjs2Eeev85Z0ItTETA">
+                      <type href="http://transitiongraph/1.0#//Transition"/>
+                      <attributes xmi:id="_SF9-ITs2Eeev85Z0ItTETA" value="b">
+                        <type href="http://transitiongraph/1.0#//Transition/probability"/>
+                      </attributes>
+                      <attributes xmi:id="_N-B4YTs2Eeev85Z0ItTETA" value="&quot;eps&quot;">
+                        <type href="http://transitiongraph/1.0#//Transition/label"/>
+                      </attributes>
+                    </nodes>
+                    <nodes xmi:id="_SF-lMDs2Eeev85Z0ItTETA" outgoing="_SF-lMjs2Eeev85Z0ItTETA">
+                      <type href="http://transitiongraph/1.0#//State"/>
+                    </nodes>
+                    <edges xmi:id="_SF-lMjs2Eeev85Z0ItTETA" source="_SF-lMDs2Eeev85Z0ItTETA" target="_SF9-IDs2Eeev85Z0ItTETA">
+                      <type href="http://transitiongraph/1.0#//State/outgoing"/>
+                    </edges>
+                  </conclusion>
+                  <mappings xmi:id="_SF9-Izs2Eeev85Z0ItTETA" origin="_o3IwQjszEeed9pCwOM-lzA" image="_SF9-IDs2Eeev85Z0ItTETA"/>
+                  <mappings xmi:id="_SF-lMTs2Eeev85Z0ItTETA" origin="_o3IwQTszEeed9pCwOM-lzA" image="_SF-lMDs2Eeev85Z0ItTETA"/>
+                </child>
+              </right>
+            </left>
+            <right xsi:type="henshin:Not" xmi:id="_TB4MwTs2Eeev85Z0ItTETA">
+              <child xsi:type="henshin:NestedCondition" xmi:id="_TB4Mwjs2Eeev85Z0ItTETA">
+                <conclusion xmi:id="_TB4Mwzs2Eeev85Z0ItTETA" name="1">
+                  <nodes xmi:id="_TB4MxDs2Eeev85Z0ItTETA" outgoing="_DvCxUDs1Eeev85Z0ItTETA">
+                    <type href="http://transitiongraph/1.0#//Transition"/>
+                    <attributes xmi:id="_TB4MxTs2Eeev85Z0ItTETA" value="b">
+                      <type href="http://transitiongraph/1.0#//Transition/probability"/>
+                    </attributes>
+                  </nodes>
+                  <nodes xmi:id="_TB4Mxzs2Eeev85Z0ItTETA" incoming="_DvCxUDs1Eeev85Z0ItTETA">
+                    <type href="http://transitiongraph/1.0#//State"/>
+                  </nodes>
+                  <edges xmi:id="_DvCxUDs1Eeev85Z0ItTETA" source="_TB4MxDs2Eeev85Z0ItTETA" target="_TB4Mxzs2Eeev85Z0ItTETA">
+                    <type href="http://transitiongraph/1.0#//Transition/target"/>
+                  </edges>
+                </conclusion>
+                <mappings xmi:id="_TB4Mxjs2Eeev85Z0ItTETA" origin="_o3IwQjszEeed9pCwOM-lzA" image="_TB4MxDs2Eeev85Z0ItTETA"/>
+                <mappings xmi:id="_TB4MyDs2Eeev85Z0ItTETA" origin="_o3IwQTszEeed9pCwOM-lzA" image="_TB4Mxzs2Eeev85Z0ItTETA"/>
+              </child>
+            </right>
+          </formula>
+        </lhs>
+        <rhs xmi:id="_o3IwRTszEeed9pCwOM-lzA" name="Rhs">
+          <nodes xmi:id="_o3IwRjszEeed9pCwOM-lzA" outgoing="_o3IwSjszEeed9pCwOM-lzA">
+            <type href="http://transitiongraph/1.0#//State"/>
+          </nodes>
+          <nodes xmi:id="_o3IwRzszEeed9pCwOM-lzA" incoming="_o3IwSjszEeed9pCwOM-lzA">
+            <type href="http://transitiongraph/1.0#//Transition"/>
+            <attributes xmi:id="_o3IwSDszEeed9pCwOM-lzA" value="b/a">
+              <type href="http://transitiongraph/1.0#//Transition/probability"/>
+            </attributes>
+          </nodes>
+          <edges xmi:id="_o3IwSjszEeed9pCwOM-lzA" source="_o3IwRjszEeed9pCwOM-lzA" target="_o3IwRzszEeed9pCwOM-lzA">
+            <type href="http://transitiongraph/1.0#//State/outgoing"/>
+          </edges>
+        </rhs>
+        <mappings xmi:id="_o3IwTDszEeed9pCwOM-lzA" origin="_o3IwQTszEeed9pCwOM-lzA" image="_o3IwRjszEeed9pCwOM-lzA"/>
+        <mappings xmi:id="_o3IwTTszEeed9pCwOM-lzA" origin="_o3IwQjszEeed9pCwOM-lzA" image="_o3IwRzszEeed9pCwOM-lzA"/>
+        <multiMappings xmi:id="_o3IwTjszEeed9pCwOM-lzA" origin="_o3IwOTszEeed9pCwOM-lzA" image="_o3IwRjszEeed9pCwOM-lzA"/>
+        <multiMappings xmi:id="_o3IwTzszEeed9pCwOM-lzA" origin="_o3IwNzszEeed9pCwOM-lzA" image="_o3IwQTszEeed9pCwOM-lzA"/>
+        <multiMappings xmi:id="_o3IwUDszEeed9pCwOM-lzA" origin="_o3IwOjszEeed9pCwOM-lzA" image="_o3IwSTszEeed9pCwOM-lzA"/>
+      </multiRules>
+    </multiRules>
+    <javaImports>org.eclipse.emf.henshin.interpreter.util.Aggregations</javaImports>
+  </units>
+  <units xsi:type="henshin:SequentialUnit" xmi:id="_t3zYQDs0Eeev85Z0ItTETA" name="recalculateProbabilities" subUnits="_Aj8n8DstEeed9pCwOM-lzA _o3IwMDszEeed9pCwOM-lzA"/>
+</henshin:Module>

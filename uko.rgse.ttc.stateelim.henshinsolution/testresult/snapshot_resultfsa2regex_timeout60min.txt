@@ -1,0 +1,20 @@
+modelname,size of the regular expression,time to transform (ms),correctly accepted words,correctly not accepted words
+leader3_2,66,937,24/24,29/29
+leader3_3,218,409,25/25,30/30
+leader3_4,514,876,29/29,30/30
+leader3_5,1002,2797,30/30,30/30
+leader3_6,1730,9945,27/27,30/30
+leader3_8,4098,122717,29/29,30/30
+leader4_2,162,184,25/25,29/29
+leader4_3,812,2307,27/27,30/30
+leader4_4,2562,46593,28/28,29/29
+leader4_5,6252,633745,28/28,29/29
+leader4_6,Timeout
+leader5_2,386,456,14/14,28/28
+leader5_3,2918,127723,26/26,30/30
+leader5_4,Timeout
+leader5_5,Timeout
+leader6_2,898,6013,15/15,29/29
+leader6_3,Timeout
+leader6_4,Timeout
+leader6_5,Timeout

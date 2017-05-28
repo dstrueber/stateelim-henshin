@@ -1,0 +1,1 @@
+This directory contains the unmodified test data from the original ExperimentalData project. The reason for duplicating the data was to avoid loading problems related to file references between multiple projects hosted in different Git repositories.
