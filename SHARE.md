@@ -3,11 +3,11 @@
 ## Availablility 
 The [SHARE image](http://is.ieis.tue.nl/staff/pvgorp/share/?page=ConfigureNewSession&vdi=XP-TUe_TTC16_NMF_mrttc16_stateelim-henshin-ttc16.vdi) is available under the bundle name **XP-TUe_TTC16_NMF_mrttc16_stateelim-henshin-ttc16.vdi**.
 
-Sorry for the confusing name, there doesn't see to be a function for changing it.
+By the way, sorry for the confusing name -- there doesn't see to be a function for changing it.
 
 ## Using the SHARE image
 
-After opening the image, You will find an instructive readme file on the desktop. For your convenience, you can read the contents of this readme file below.
+After opening the image, you will find an instructive readme file on the desktop. For your convenience, you can read the contents of this readme file below as well.
 
 ## Instructions 
 
