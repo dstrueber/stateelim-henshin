@@ -2,6 +2,8 @@
 
 A solution for a [case](https://github.com/sinemgetir/state-elimination-mt) in the [Transformation Tool Contest 2017](http://www.transformation-tool-contest.eu/).
 
+For information regarding the SHARE image, see the [SHARE readme](SHARE.md).
+
 ## How to use this repository? ##
 
 ### Run our solution ###
@@ -27,6 +29,3 @@ Usage
 * To view and edit the transformations, you first need to make sure that the TransitionGraph metamodel is registered in your Eclipse metamodel registry. To this end, copy the file *TransitionGraph_1.0.0.201705162001.jar*  from *uko.rgse.ttc.stateelim.henshinsolution/lib* to the *dropins* folder of your Eclipse installation and restart Eclipse. This file contains an Eclipse plug-in with generated code for the TransitionGraph metamodel.
 * Open the *.henshin* and *.henshin_diagram* files contained in the folder *transformations*  of the project *uko.rgse.ttc.stateelim.henshinsolution*.
 
-## SHARE image ##
-
-For information regarding the SHARE image, see the [SHARE readme](SHARE.md).
