@@ -7,9 +7,9 @@ Sorry for the confusing name, there doesn't see to be a function for changing it
 
 ## Using the SHARE image
 
-You will find a descriptive readme file on the desktop after opening the image. For your convenience,  we copied the contents of this readme file below.
+After opening the image, You will find an instructive readme file on the desktop. For your convenience, you can read the contents of this readme file below.
 
-## Contents of the readme file
+## Instructions 
 
 How to work with this solution:
  
